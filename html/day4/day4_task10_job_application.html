@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Application</title>
+</head>
+<body>
+  <h1>Employment Application</h1>
+  <form>
+    <fieldset>
+      <legend>Personal Details</legend>
+      <label>Name: <input name="name" required></label><br>
+      <label>Email: <input type="email" name="email" required></label><br>
+      <label>Phone: <input type="tel" name="phone" required></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Position</legend>
+      <select name="position" required>
+        <option value="">-- Select --</option>
+        <option>Frontend Developer</option>
+        <option>Backend Developer</option>
+        <option>QA Engineer</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Experience Level</legend>
+      <label><input type="radio" name="exp" value="fresher" required> Fresher</label>
+      <label><input type="radio" name="exp" value="junior"> Junior</label>
+      <label><input type="radio" name="exp" value="senior"> Senior</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Skills</legend>
+      <label><input type="checkbox" name="html"> HTML</label>
+      <label><input type="checkbox" name="css"> CSS</label>
+      <label><input type="checkbox" name="js"> JavaScript</label>
+    </fieldset>
+
+    <label>Expected Salary (₹): <input type="number" name="salary" min="0" step="1000" required></label><br>
+
+    <label>Cover Letter:
+      <textarea name="cover" rows="6" cols="50" required></textarea>
+    </label><br>
+
+    <button type="submit">Apply</button>
+  </form>
+</body>
+</html>

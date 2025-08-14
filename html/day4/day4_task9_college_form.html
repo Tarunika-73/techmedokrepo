@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>College Admission Application</title>
+</head>
+<body>
+  <h1>College Admission Application</h1>
+  <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label>Full Name: <input type="text" name="name" required></label><br>
+      <label>Email: <input type="email" name="email" required></label><br>
+      <label>Phone: <input type="tel" name="phone" required></label><br>
+      <label>DOB: <input type="date" name="dob" required></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Course Selection</legend>
+      <select name="course" required>
+        <option value="">-- Select Course --</option>
+        <option>BSc Computer Science</option>
+        <option>BCom</option>
+        <option>BA English</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Previous Education</legend>
+      <label><input type="radio" name="prev" value="HSC" required> HSC</label>
+      <label><input type="radio" name="prev" value="Diploma"> Diploma</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Extracurricular Activities</legend>
+      <label><input type="checkbox" name="sports"> Sports</label>
+      <label><input type="checkbox" name="music"> Music</label>
+      <label><input type="checkbox" name="coding"> Coding Club</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Essay</legend>
+      <textarea name="essay" rows="5" cols="40" required placeholder="Why do you want to join?"></textarea>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

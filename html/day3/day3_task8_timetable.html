@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weekly Class Schedule</title>
+  <style>
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    .math { background:#fce4ec; }
+    .cs { background:#e8f5e9; }
+    .eng { background:#e3f2fd; }
+    .break { background:#fff3e0; }
+  </style>
+</head>
+<body>
+  <h1>Weekly Class Schedule</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>9:00–10:00</td>
+        <td class="math" rowspan="2">Mathematics (R101)</td>
+        <td class="cs">CS (Lab)</td>
+        <td class="eng" colspan="2">English Workshop (Auditorium)</td>
+        <td class="cs">CS</td>
+      </tr>
+      <tr>
+        <td>10:00–11:00</td>
+        <td class="math">Mathematics</td>
+        <td class="eng">English</td>
+        <td class="eng">—</td>
+        <td class="math">Mathematics</td>
+      </tr>
+      <tr class="break">
+        <td>11:00–11:30</td><td colspan="5">Break</td>
+      </tr>
+      <tr>
+        <td>11:30–12:30</td>
+        <td class="cs" colspan="2">Programming (Lab)</td>
+        <td class="eng">English</td>
+        <td class="cs">Programming</td>
+        <td class="math">Mathematics</td>
+      </tr>
+      <tr class="break">
+        <td>12:30–1:30</td><td colspan="5">Lunch</td>
+      </tr>
+      <tr>
+        <td>1:30–2:30</td>
+        <td class="eng">English</td>
+        <td class="cs">Programming</td>
+        <td class="math">Mathematics</td>
+        <td class="cs" colspan="2">Project Work</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modern Blog</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin:0; }
+    header, footer { background:#222; color:#fff; padding:1rem; }
+    main { display:grid; grid-template-columns: 2fr 1fr; gap:1rem; padding:1rem; }
+    article { background:#f9f9f9; padding:1rem; }
+    aside { background:#f1f1f1; padding:1rem; }
+    nav a { color:#fff; margin-right:1rem; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Tech Blog</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Articles</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <article>
+        <h2>Getting Started with HTML5</h2>
+        <p>HTML5 introduces semantic elements that improve structure and accessibility.</p>
+      </article>
+      <article>
+        <h2>Why CSS Grid is Awesome</h2>
+        <p>Grid helps create complex layouts with simple, readable code.</p>
+      </article>
+    </section>
+
+    <aside>
+      <h3>Categories</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <h3>Recent Posts</h3>
+      <ul>
+        <li>Debugging Tips</li>
+        <li>Responsive Design Basics</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2025 My Tech Blog • <a href="#" style="color:#fff;">Contact</a></p>
+  </footer>
+</body>
+</html>
