@@ -1,3 +1,2 @@
 # techmedok intern repo
-
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+This repo is for Git & GitHub learning during internship.
