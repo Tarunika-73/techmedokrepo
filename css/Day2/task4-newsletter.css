@@ -1,0 +1,22 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui, Arial, sans-serif;background:#f6f7fb;color:#1f2937}
+.wrapper{max-width:900px;margin:1.5rem auto;padding:1rem}
+.masthead{
+  border:1px solid #e5e7eb; border-radius:14px; padding:1rem; text-align:center; background:#fff
+}
+.grid{
+  display:grid; grid-template-columns: 1fr; gap:1rem; margin-top:1rem
+}
+.post, .sidebar{
+  background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:1rem
+}
+.post img{ width:100%; height:220px; object-fit:cover; border-radius:10px }
+.signup{ margin-top:1rem; display:grid; gap:.5rem }
+input, button{ padding:.6rem .75rem; border:1px solid #d1d5db; border-radius:10px }
+button{ background:#111827; color:#fff; cursor:pointer }
+button:hover{ opacity:.9 }
+.footer{ text-align:center; color:#6b7280; margin:1rem 0 }
+@media(min-width:900px){
+  .grid{ grid-template-columns: 2fr 2fr 1fr; }
+  .post:nth-child(2){ min-height:100% }
+}

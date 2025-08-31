@@ -1,0 +1,34 @@
+*{box-sizing:border-box}
+:root{
+  --bg:#0b1020; --panel:#0e1530; --ink:#e8ecff; --muted:#a5b1e1; --accent:#7aa2ff;
+  --ok:#10b981; --bad:#ef4444;
+}
+body{margin:0;font-family:Inter, system-ui, Arial, sans-serif;background:var(--bg);color:var(--ink)}
+.form-wrap{max-width:900px;margin:2rem auto;background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:1rem 1.25rem}
+h1{margin:.5rem 0 1rem}
+.grid{display:grid;grid-template-columns:1fr;gap:1rem}
+fieldset{border:1px solid #223056;border-radius:12px;padding:1rem}
+legend{padding:0 .5rem;color:#cfe1ff}
+label{display:grid;gap:.4rem;margin:.4rem 0}
+input, select, textarea{
+  font:inherit;color:var(--ink);background:#0b1226;border:1px solid #223056;border-radius:10px;padding:.6rem .7rem
+}
+.select{position:relative}
+.select::after{content:"▾";position:absolute;right:.7rem;top:50%;transform:translateY(-50%);pointer-events:none;color:#7aa2ff}
+.inline{display:flex;gap:1rem;flex-wrap:wrap;margin-top:.5rem}
+.check input{accent-color:#10b981}
+.req{color:#ef4444}
+textarea{resize:vertical}
+
+/* Validation feedback */
+input:required:valid, select:required:valid{ border-color:#1f7a56; box-shadow:0 0 0 3px rgba(16,185,129,.15) }
+input:required:invalid:focus, select:required:invalid:focus{ border-color:#7a1f1f; box-shadow:0 0 0 3px rgba(239,68,68,.15) }
+
+.actions{ display:flex; justify-content:flex-end }
+button{ background:linear-gradient(135deg, var(--accent), #22d3ee); color:#0b1220; border:0; padding:.8rem 1rem; border-radius:12px; cursor:pointer }
+button:hover{ transform:translateY(-1px) }
+
+@media(min-width:900px){
+  .grid{ grid-template-columns:1fr 1fr }
+  .full{ grid-column:1 / -1 }
+}

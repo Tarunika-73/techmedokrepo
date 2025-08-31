@@ -1,0 +1,26 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui, Arial, sans-serif;background:#0f1115;color:#e5e7eb}
+.menu{max-width:720px;margin:2rem auto;background:#0b1220;border:1px solid #1f2937;border-radius:16px;padding:1rem 1.25rem}
+h1{ text-align:center }
+.list{ list-style:none; padding:0; margin:0 }
+.list li{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:.8rem 1rem; margin:.5rem 0; border:1px solid #1f2937; border-radius:12px;
+  position:relative;
+}
+.list li:hover{ background:#0f172a } /* :hover pseudo-class */
+.list li:focus{ outline:3px solid #2563eb; } /* :focus for accessibility */
+.list li .price{ font-weight:600 }
+.special::before{ /* pseudo-element decorative price tag */
+  content:"★";
+  position:absolute; left:.6rem; top:.7rem; font-size:1rem; opacity:.8;
+}
+.new::after{ /* "new" badge */
+  content:"NEW";
+  position:absolute; right:.6rem; top:-.6rem; font-size:.7rem; background:#10b981; color:#0a192f; padding:.25rem .4rem; border-radius:6px;
+}
+/* Specificity demo: make seasonal specials gold unless hovered */
+.list li.special{ color:#f1c40f }
+.list li.special:hover{ color:#e5e7eb }
+/* Attribute selector demo (if we had links) */
+a[href^="#"]{ text-decoration:dashed }

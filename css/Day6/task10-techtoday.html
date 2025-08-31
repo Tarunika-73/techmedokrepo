@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechToday – Technology News</title>
+  <link rel="stylesheet" href="task10-techtoday.css"/>
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <span class="logo">TechToday</span>
+    </div>
+    <nav class="nav" data-open="false">
+      <a href="#tech">Technology</a>
+      <a href="#business">Business</a>
+      <a href="#sports">Sports</a>
+      <a href="#trending">Trending</a>
+      <a href="#newsletter">Newsletter</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <article class="featured">
+      <img src="../assets/images/tech-1.jpg" alt="Featured article">
+      <div class="overlay">
+        <h1>AI chips set to redefine on‑device computing</h1>
+        <p>From phones to cars, new hardware unlocks private, low‑latency intelligence.</p>
+      </div>
+    </article>
+  </section>
+
+  <div class="layout">
+    <main class="main">
+      <section class="section" id="tech">
+        <h2>Technology</h2>
+        <div class="cards">
+          <article class="card"><img src="../assets/images/tech-2.jpg" alt=""><h3>WebAssembly beyond the browser</h3><p>Portable compute breaks out to the edge.</p></article>
+          <article class="card"><img src="../assets/images/tech-3.jpg" alt=""><h3>New CSS features shipping</h3><p>Container queries & nesting in real projects.</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="business">
+        <h2>Business</h2>
+        <div class="cards">
+          <article class="card"><img src="../assets/images/tech-4.jpg" alt=""><h3>Startups race for AI infra</h3><p>Specialized stacks for speed and cost.</p></article>
+          <article class="card"><img src="../assets/images/tech-5.jpg" alt=""><h3>Cloud cost control</h3><p>FinOps moves from buzzword to baseline.</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="sports">
+        <h2>Sports</h2>
+        <div class="cards">
+          <article class="card"><img src="../assets/images/tech-6.jpg" alt=""><h3>Wearables boost performance</h3><p>Realtime telemetry guides coaching.</p></article>
+          <article class="card"><img src="../assets/images/tech-2.jpg" alt=""><h3>AR training goes mainstream</h3><p>Mixed reality hits pro camps.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <aside class="sidebar">
+      <section id="trending">
+        <h3>Trending</h3>
+        <ul class="trending">
+          <li><a href="#">Rust in the kernel</a></li>
+          <li><a href="#">RAG for support</a></li>
+          <li><a href="#">Edge databases</a></li>
+          <li><a href="#">GPU scheduling</a></li>
+        </ul>
+      </section>
+
+      <section id="newsletter" class="newsletter">
+        <h3>Newsletter</h3>
+        <p>Stay ahead with weekly insights.</p>
+        <form>
+          <input type="email" placeholder="you@example.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 TechToday • All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Mobile nav toggle (no external JS)
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav');
+    burger.addEventListener('click', () => {
+      const open = nav.getAttribute('data-open') === 'true';
+      nav.setAttribute('data-open', String(!open));
+      burger.setAttribute('aria-expanded', String(!open));
+    });
+  </script>
+</body>
+</html>
