@@ -1,0 +1,32 @@
+*{box-sizing:border-box}
+:root{
+  --bg:#06080f; --ink:#e5e7eb; --muted:#9ca3af; --accent:#34d399; --alt:#60a5fa;
+}
+body{margin:0;font-family:system-ui, Arial, sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:1000px;margin:2rem auto;padding:0 1rem}
+header h1{text-align:center;margin:0 0 1rem}
+.group{margin:1rem 0}
+.group h2{
+  background:linear-gradient(135deg, rgba(52,211,153,.18), transparent);
+  border-left:4px solid var(--accent); padding:.4rem .6rem; border-radius:8px;
+}
+.table-wrap{ overflow:auto; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,.3) }
+.board{
+  width:100%; border-collapse:collapse; min-width:680px;
+  background:#0b1220; border:1px solid #16203a;
+}
+.board thead th{
+  position:sticky; top:0; background:linear-gradient(180deg, #0f172a, #0b1220);
+  text-align:left; padding:.8rem; font-weight:700; letter-spacing:.3px; box-shadow:0 2px 0 rgba(255,255,255,.04) inset;
+}
+.board td{ padding:.7rem .8rem; border-top:1px solid #16203a; vertical-align:middle }
+.board tbody tr:nth-child(odd){ background:#0c1328 } /* zebra striping */
+.board tbody tr:hover{ background:#0e1730; transition:background .15s }
+.board .pts{ text-align:right; font-weight:700 }
+.board td:nth-child(1), .board th:nth-child(1){ width:40px; text-align:right }
+.board td:nth-child(6), .board td:nth-child(7){ text-align:right }
+
+/* Group B variant */
+.alt thead th{ background:linear-gradient(180deg, #0f172a, #0b1220) }
+.alt{ border-color:#163052 }
+.top{ color:#d1fae5 }

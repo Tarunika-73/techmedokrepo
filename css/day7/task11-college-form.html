@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Admission Application</title>
+  <link rel="stylesheet" href="task11-college-form.css"/>
+</head>
+<body>
+  <main class="form-wrap">
+    <h1>College Admission Application</h1>
+    <form class="grid" novalidate>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label>Full Name <span aria-hidden="true" class="req">*</span>
+          <input type="text" name="name" required placeholder="Your full name">
+        </label>
+        <label>Email <span class="req">*</span>
+          <input type="email" name="email" required placeholder="you@example.com">
+        </label>
+        <label>Phone
+          <input type="tel" name="phone" placeholder="+91 90000 00000">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Program</legend>
+        <label>Department
+          <div class="select">
+            <select required>
+              <option value="">Choose…</option>
+              <option>Computer Science</option>
+              <option>Electronics</option>
+              <option>Mechanical</option>
+            </select>
+          </div>
+        </label>
+        <div class="inline">
+          <label><input type="radio" name="level" required> Undergraduate</label>
+          <label><input type="radio" name="level" required> Postgraduate</label>
+        </div>
+        <div class="inline">
+          <label class="check"><input type="checkbox"> Hostel</label>
+          <label class="check"><input type="checkbox"> Transport</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="full">
+        <legend>Essay</legend>
+        <textarea rows="6" placeholder="Tell us about yourself and your goals…"></textarea>
+      </fieldset>
+
+      <div class="actions full">
+        <button type="submit">Submit Application</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
